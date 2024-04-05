@@ -88,7 +88,10 @@ section {
 }
 
 video {
-    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .mascara {
@@ -104,8 +107,8 @@ video {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 50px;
-    left: 50px;
+    top: 30%;
+    left: -300px;
     padding: 20px;
     border-radius: 4px;
 
@@ -146,4 +149,13 @@ video {
         font-weight: bold;
         margin-top: 30px;
     }
+}
+
+.mascara-formulario{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(217,71,196,1) 50%, rgba(161,0,196,1) 100%);
 }
