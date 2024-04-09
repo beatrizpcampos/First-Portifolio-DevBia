@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 
-
-
-
-body {
+.mascara-formulario {
+    visibility: hidden;
+    transition: visibility 1s linear;
+    z-index: 3;
+    position: fixed;
+    width: 100vw;
     height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
 
 header {
@@ -18,7 +21,7 @@ header {
     gap: 30px;
     margin: 30px;
     margin-left: 100px;
-    font-size: 25px;
+    font-size: 23px;
 
     img {
         height: 80px;
@@ -41,7 +44,6 @@ header {
 }
 
 section {
-    color: aliceblue;
     display: flex;
     height: 100vh;
     align-items: center;
@@ -57,7 +59,7 @@ section {
         cursor: pointer;
         text-transform: uppercase;
         font-weight: bold;
-        margin-top: 70px;
+        margin-top: 50px;
     }
 
     button:hover {
@@ -68,38 +70,47 @@ section {
     }
 }
 
-.sobre {
-    max-width: 50%;
-    color: whitesmoke;
-    font-size: 25px;
-    margin-top: -100px;
-}
-
-.foto-beatriz {
-    height: 250px;
-    border-radius: 20px;
-    margin-top: -100px;
-}
-
-.video-fundo {
-    position: fixed;
-    top: 0;
-    z-index: -1;
-}
-
 video {
+    height: auto;
+    width: auto;
     min-height: 100%;
     min-width: 100%;
     position: fixed;
     top: 0;
 }
 
-.mascara {
+.sobre {
+    max-width: 50%;
+    color: whitesmoke;
+    font-size: 22px;
+    margin-top: -150px;
+
+    h1{
+        font-size: 30px;
+    }
+}
+
+.foto-beatriz {
+    height: 300px;
+    border-radius: 30px;
+    margin-top: -200px;
+    width: 350px;
+}
+
+.video-fundo {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+
+.mascara-video {
+    z-index: 2;
+    position: fixed;
+    top: 0;
     height: 100%;
     width: 100%;
     background: linear-gradient(65deg, rgba(41, 30, 58, 0.99) 10%, rgba(33, 27, 47, 0.7) 70%, rgba(41, 30, 58, 0.99) 90%);
-    position: fixed;
-    top: 0;
 }
 
 .formulario {
@@ -112,12 +123,13 @@ video {
     padding: 20px;
     border-radius: 4px;
 
-    h1{
+    h1 {
         color: white;
         width: 270px;
         font-size: 20px;
         margin-bottom: 15px;
     }
+
     input {
         height: 50px;
         border-radius: 4px;
@@ -149,13 +161,4 @@ video {
         font-weight: bold;
         margin-top: 30px;
     }
-}
-
-.mascara-formulario{
-    z-index: 2;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background: radial-gradient(circle, rgba(217,71,196,1) 50%, rgba(161,0,196,1) 100%);
 }
