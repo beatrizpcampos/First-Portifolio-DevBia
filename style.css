@@ -4,16 +4,6 @@
     box-sizing: border-box;
 }
 
-.mascara-formulario {
-    visibility: hidden;
-    transition: visibility 1s linear;
-    z-index: 3;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
-}
-
 header {
     color: aliceblue;
     display: flex;
@@ -122,6 +112,7 @@ video {
     left: -300px;
     padding: 20px;
     border-radius: 4px;
+    transition: left 0.8s ease-in-out;
 
     h1 {
         color: white;
@@ -161,4 +152,14 @@ video {
         font-weight: bold;
         margin-top: 30px;
     }
+}
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgb(174, 53, 243) 15%, rgba(147, 74, 160, 0.7) 50%, rgb(174, 53, 243) 85%);
+    transition: visibility 0.5s ease-in-out;
 }

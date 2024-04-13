@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="mascara-formulario"></div>
+    <div class="mascara-formulario" onclick="disableForm()"></div>
     <header>
         <a>Home</a>
         <a>Tecnologias</a>
@@ -37,7 +37,9 @@
                 <br>
                 <br>
                 Tenho domínio e já desenvolvi diversos projetos utilizando ferramentas e tecnologias como:<br>
-                HTML5, CSS3, JAVASCRIPT, GITHUB, NODE.JS, EXPRESS, DOCKER, MONGODB, PRISMA, POSTGRESQL, SEQUELIZE, APIs REST, JWT TOKEN, REACT.JS, AXIOS, GLOBALSTYLE, FIGMA, MENDIX.</p>
+                HTML5, CSS3, JAVASCRIPT, GITHUB, NODE.JS, EXPRESS, DOCKER, MONGODB, PRISMA, POSTGRESQL, SEQUELIZE, APIs
+                REST, JWT TOKEN, REACT.JS, AXIOS, GLOBALSTYLE, FIGMA, MENDIX.
+            </p>
             <button onclick="activeForm()">Entre em Contato</button>
         </div>
         <div>
@@ -45,14 +47,15 @@
         </div>
     </section>
 
-    <form class="formulario">
+    <form class="formulario" action="https://formcarry.com/s/nrOYxEhl9K9" method="POST" enctype="multipart/form-data">
         <h1>Me mande uma mensagem 😊</h1>
-        <input placeholder="Digite seu nome">
-        <input placeholder="Digite seu telefone">
-        <textarea placeholder="Digite a mensagem"></textarea>
-        <button>Enviar Mensagem</button>
+        <input placeholder="Digite seu nome" type="text" name="nome">
+        <input placeholder="Digite seu telefone" type="tel" name="telefone">
+        <textarea placeholder="Digite a mensagem" name="mensagem"></textarea>
+        <button type="submit">Enviar Mensagem</button>
     </form>
 
 </body>
 <script src="scripts.js"></script>
+
 </html>
