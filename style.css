@@ -10,9 +10,14 @@ header {
     align-items: center;
     gap: 30px;
     margin: 30px;
-    margin-left: 100px;
+    margin-left: 80px;
     font-size: 23px;
-
+    
+    .link-header{
+     margin-right: 10px;
+     display: flex;
+     gap: 30px;
+    }
     img {
         height: 80px;
         width: 70px;
@@ -162,4 +167,57 @@ video {
     height: 100vh;
     background: linear-gradient(109deg, rgb(174, 53, 243) 15%, rgba(147, 74, 160, 0.7) 50%, rgb(174, 53, 243) 85%);
     transition: visibility 0.5s ease-in-out;
+}
+
+@media(max-width: 1000px){
+  header {
+    margin: 5px;
+    gap: 20px;
+    font-size: 19px;
+
+    .link-header{
+        display: none;
+    }
+
+    img {
+        height: 30px;
+        width: 30px;
+    }
+
+    a img {
+        margin: 5px;
+        height: 30px;
+        width: 30px;
+
+    }
+  }
+
+  section{
+    flex-direction: column;
+    padding: 10px;
+    justify-content: none;
+  }
+  
+  .sobre{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    max-width: 85%;
+  }
+   
+  .foto-beatriz {
+    height: 200px;
+    border-radius: 30px;
+    width: 300px;
+    margin-top: 40px;
+  }
+
+  buttom{
+    margin-top: 5px;
+  }
+
+  .mascara-formulario{
+    background: linear-gradient(109deg, rgb(51, 11, 74) 100%, rgba(132, 21, 151, 0.7) 100%, rgb(174, 53, 243) 85%);
+  }
 }
